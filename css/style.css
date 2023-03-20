@@ -9,11 +9,12 @@
     --secondary-color : #ebc154;
     --dark-color : #000000;
     --max-width: 1100px;
+    --stars-color: #ebc154;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: darkgrey;
+    background: #fff;
     line-height: 1.6rem;
 }
 
@@ -37,7 +38,7 @@ img {
     text-align: center;
     width: 100%;
     color: white;
-    background: darkgrey;
+    background: lightgray;
 }
 
 
@@ -57,41 +58,99 @@ img {
     background: #ebc154;
 }
 
-.content {
-    background: darkgrey;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-}
-
-.content p {
-  font-size: 2rem;
-}
-
-.content h3 {
-    font-size: 4rem;
-}
 
 .container {
-    max-width: var(--max-width);
-    padding: 2rem;
+    padding: 1rem;
     overflow: hidden;
     margin: auto;
 }
+
+#main-header .container {
+    background: lightgrey;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+#main-header .container h3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 5px;
+}
+
+#main-header .container h2 {
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem;
+    float: left;
+    margin-left: 0px 0px 0px 30px;
+}
+
+.arrow {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 15%;
+    float: left;
+    margin-left: 25px;
+}
+
+.sub {
+    text-align: left;
+    width: 30%;
+    height: 30%;
+    float: left;
+    margin-left: 25px;
+}
+
+.continent {
+    text-align: left;
+    width: 5%;
+    height: 5%;
+    float: left;
+    font-weight: 10px;
+}
+
+/* 
+ #main-header .container ::after {
+    content: '';
+    background: url(../img/matthias-mullie-u2-97eBhFEc-unsplash1\ 1\ \(1\).png)no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -3;
+}  */
+
+
+
+
+
 
 #home-articles .container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1.4rem;
+    background: #fff;
 }
 
 #home-articles .container p {
     margin-top: 2rem;
-    color: #fff;
+    color: #333;
 }
 
 #home-articles .container h4 {
     margin-bottom: 1.5rem;
+    background: #fff;
 }
 
 #home-articles .container-1 h4 {
@@ -115,111 +174,224 @@ img {
 #main-article .article-container p {
     margin-top: 1.5rem;
 }
+#main-article .article-container span {
+    border-bottom: var(--secondary-color) 1px solid;
+    border-bottom-width: 3px;
+}
 
-#hotels .hotel-container h3,h4 {
-    background: darkgrey;
-    color: #000000;
-    padding : 0.5rem;
+
+.hotel-container {
     position: relative;
 }
 
-#hotels .hotel-container {
+.London {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
+}
+
+.London h3 {
+    color: #fff;
+}
+
+.London p {
+    color: #fff;
+}
+
+.London i {
+    color: var(--secondary-color);
+}
+
+.Lagos {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.Lagos h3 {
+  color: #fff;
+}
+
+.Lagos p {
+    color: #fff;
+}
+
+.Lagos i {
+    color: var(--secondary-color);
+}
+
+.Geneva {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 5rem;
+}
+
+.Geneva h3 {
+    color: #fff;
+}
+
+.Geneva p {
+    color: #fff;
+}
+
+.Geneva i {
+    color: var(--secondary-color);
+}
+
+#hotels {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 15px;
-    padding: 1rem;
+    grid-gap: 0.5rem;
+    margin-left: 8px;
+    border-radius: 25px;
 }
 
-#hotels .hotel-container img > *:last-child {
-    height: 100%;
-    width: 100%;
-}
-
-#hotels .hotel-container img {
-     border-radius: 20px;
-     top: 0;
-     left: 0;
-     width: 90%;
-     height: 100%;
-}
-
-#about .container {
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-   padding: 15rem 8rem;
-   margin-right: 12rem;
-   margin-bottom: 10rem;
-   justify-content: center;
-   text-align: center;
-   justify-items: center;
-}
-
-#about .container h3 {
-    font-size: 1.5rem;
-    margin-right: 18rem;
-}
-
-#about .container span {
-    border-bottom: 3px solid var(--secondary-color);
-}
-
-#about img {
-    padding-top: 2rem;
-    
-}
-
-#about .container p {
-    padding-top: 1rem;
-}
-
-#about .container a {
-    color: var(--secondary-color);
-}
-
-.container .p {
+.Learn{
     text-align: center;
-    margin-bottom: 30rem;
+    justify-content: center;
 }
 
-.container .p h2 {
-    padding-bottom: 4rem;
-   
+.btn-1 {
+    text-align: center;
+    justify-self: center;
 }
 
-.container .p span {
+#about .container-0 { 
+    display:flex;
+    flex-direction: row;
+    padding: 5rem 10rem;
+    margin-left: 2rem;
+    position: relative;
+} 
+
+#about .container-0 img {
+    width: 70vh;
+    height: 100%;
+    align-self: center;
+}
+
+#about .container-0 p {
+    align-items: center;
+    padding: 0, 10rem;  
+}
+
+#about .container-0 h3 {
+    font-size: 1.2rem;
+    margin-right: 25rem;
+
+ }
+
+#about .container-0 a {
+    color: var(--secondary-color); 
+    justify-content: center;
+    text-align: center;
+}
+
+#about .container-0 span {
     border-bottom: 3px solid var(--secondary-color);
+} 
+
+#about .fg p  {
+    text-align: center;
+    padding: 5rem, 20rem;
+    margin-right: 20rem;
 }
 
-.container .p i {
+#about .fg a {
+    margin-left: 7rem;
+}
+
+
+ #about .container-0 ::after,
+ .people ::after {
+    content: '';
+    background: url(../img/Rectangle\ 9.png) no-repeat center center/cover;
+    position: absolute;
+    margin-top: 5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -2;
+} 
+
+.people h2 {
+    text-align: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.people {
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.people h4 {
+    text-align: center;
+    justify-content: center;
+}
+
+.people span {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.people p {
+    text-align: center;
+    justify-content: center;
+    padding: 10px 30rem;
+}
+
+#stars {
+    text-align: center;
     color: var(--secondary-color);
-}
-
-
-.container .p p {
-    padding: 0.8rem 15rem;
 }
 
 .flex-item {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 4rem;
-    width: 100%;
-    border-radius: 50%;
+    grid-gap: 2rem;
+    width: 50%;
+    border-radius: 25%;
     padding: 4rem;
-    margin-left: 5rem;
+    margin-left: 18rem;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 2rem;
+     font-size: 5px;
+} 
+
+.flex-item  h6{
+   font-size: 1rem;
 }
+
 
 #main-footer .container {
     text-align: center;
     justify-content: center;
     position: relative;
+    padding: 2rem;
 }
 
+#main-footer .container ::after {
+   content: '';
+   background: url(../img/Rectangle\ 12.png) no-repeat center center/cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 90%;
+   opacity: 1;
+   z-index: -5;
+}
+
+
 #main-footer .container h2 {
-    color: #fff;
+     color: #fff;
 }
 
 #main-footer .container input {
@@ -229,12 +401,13 @@ img {
     background: var(--secondary-color);
     color: #fff;
     border-radius: 10px;
+    border: #fff;
 }
 
 #main-footer .footer-container input[type=email] {
     background: none;
     font-size: 1rem;
-    border-color: #fff;
+    border: 2px solid #fff;
     width: 20rem;
     padding: 0.9rem;
 }
@@ -244,32 +417,72 @@ img {
     padding: 0.9rem;
 }
 
+#main-footer .footer-container ::placeholder {
+    color: #fff;
+    font-size: 1.2rem;
+}
 
 
-.navbar {
+
+.navbar-2 {
     display: flex;
     justify-content:space-between;
     text-align: center;
     width: 100%;
+    border-bottom: 2px solid white;
     color: white;
-    background: darkgrey;
 }
 
 
-.navbar ul {
+.navbar-2 ul {
     justify-self: start;
     display: flex;
+    margin: 5px;
 }
 
-.navbar ul li a {
+.navbar-2 ul li a {
     padding: 0.5rem;
     font-weight: bold;
     text-align: center;
     margin-left: 1rem;
     justify-self: end;
-    margin-top: 4rem;
 }
 
-.navbar ul li a.current {
+.navbar-2 ul li a.current {
     background: #ebc154;
 }
+
+.social {
+    padding: 2rem;
+}
+
+.social a {
+    color: var(--secondary-color);
+    justify-content: space-between;
+}
+
+
+.social p {
+    color: #fff;
+    padding: 0, 3rem;
+}
+
+.social #Rights {
+    padding: 1.5rem;
+} 
+
+
+.hero {
+    padding: 2rem;
+    background: none;
+}
+
+.hero .navbar-2 {
+    background: none;
+    padding: 0;
+}
+
+#main-footer .container {
+    opacity: 9;
+}
+

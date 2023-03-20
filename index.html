@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/666b2cd237.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
     <title>Discover Travel</title>
 </head>
 <body>
@@ -27,12 +29,22 @@
     </div>
     </div>
   </nav>
-  <header class="main-header">
-   <div>
-    <p>DICOVER</p>
-    <h3>AFRICA</h3>
-   </div>
+    <header id="main-header">
+      <div class="container">
+          <h3>DISCOVER</h3>
+          <h2>AFRICA</h2>
+          <div>
+            <img class="sub" src="img/Subtract (2).png" alt="">
+            </div>
+            <div>
+              <img class="Continent" src="img/Continent Thumbnail (1).png" alt="">
+        </div>
+        <div>
+          <img class="arrow" src="img/Arrow (1).png" alt="">
+        </div>
+      </div>
   </header>
+
     <section id="home-articles">
       <div class="container">
       <div class="container-1">
@@ -59,62 +71,91 @@
       </div>
     </div>
     </section>
+
     <article id="main-article">
       <div class="article-container">
         <div>
-          <h4>Hotels</h4>
+          <h4><span>Hotels</span></h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae, blanditiis, ration
             e officiis pariatur non a nostrum sunt perspiciatis in eos possimus aliquid cumque? Ipsa quo quibus
             dam eos voluptas impedit.</p>
         </div>
       </div>
     </article>
-    <aside id="hotels">
-     <div class="hotel-container" >
-      <div> 
-      <h3>Christabel Hotel</h3>
-      <h4>London</h4>
-      <img src="img/Rectangle 10.jpg" alt="">
-      </div>
-      <div>
-        <h3>The Primrose</h3>
-        <h4>Lagos</h4>
-        <img src="img/Hotel 2.jpg" alt="">
-      </div>
-      <div>
-        <h3>Geneva Hotel</h3>
-        <h4>Peru</h4>
-        <img src="img/Hotel 3 (1).png" alt="">
-      </div>
-     </div>
-    </aside>
   </header>
-  <article id="about">
-    <div class="container">
-      <img src="img/About Video.jpg" alt="">
-      <div>
-        <h3><span>About</span> Us</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae, blanditiis, ration
-          e officiis pariatur non a nostrum sunt perspiciatis in eos possimus aliquid cumque? Ipsa quo quibus
-          dam eos voluptas impedit.</p>
-          <a href="#" class="btn">Learn More<i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </article>
-      <main id="People">
-      <div class="container">
-        <div class="p">
-        <h2>What <span>People</span> Are Saying</h2>
-        <h4>"Wonderful Tourism</h4>
+ <main id="hotels">
+  <div class="hotel-container">
+   <img src="img/Rectangle 10.jpg" alt="">
+   <div class="London">
+   <h3>Christabel Hotel</h3>
+   <p>London</p>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star">4.5</i>
+      </div>
+  </div>
+  <div class="hotel-container">
+    <img src="img/Hotel 2.jpg" alt="">
+    <div class="Lagos">
+    <h3>The Primrose</h3>
+    <p>Lagos</p>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star">4.5</i>
+    </div>
+   </div>
+   <div>
+   <div class="hotel-container">
+    <img src="img/Hotel 3 (1).png" alt="">
+    <div class="Geneva">
+    <h3>Geneva Hotel</h3>
+    <p>Peru</p>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star">4.5</i>
+        </div>
+    </div>
+    <div class="Learn">
+      <a href="#" class="btn">Learn More<i class="fas fa-arrow-right"></i></a>
+     </div>
+   </div>
+  </div>
+</main>
+  <article id="about">
+      <div class="container-0">
+    <div>
+      <img src="img/About Video.jpg" alt="">
+    </div>
+    <div class="fg">
+        <h3><span>About</span> Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae, blanditiis, ration
+          e officiis pariatur non a nostrum sunt perspiciatis in eos possimus aliquid cumque? Ipsa quo quibus
+          dam eos voluptas impedit.</p>
+          <a href="#" class="btn">Learn More<i class="fas fa-arrow-right"></i></a>
+        </div>
+        </div> 
+    </article>
+    <aside class="people">
+        <h2>What <span>People</span> Are Saying</h2>
+        <h4>"Wonderful Tourism"</h4>
+        <div id="stars"> 
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star">4.5</i>
+      </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Magnam nesciunt quas perferendis aliquam laboriosam molliti
           a, architecto sit eaque totam ipsam voluptates dolorum unde
            minima dolore sed dicta eius praesentium molestias.</p>
+          </div>
            <div class=" flex-item">
             <div>
            <img src="img/Ellipse 32.jpg" alt="">
@@ -139,7 +180,7 @@
           </div>
       </div>
       </div>
-    </main>
+  </aside>
     <footer id="main-footer">
       <div class=" container footer-container">
      <div>
@@ -150,8 +191,8 @@
     </form>
      </div>
      <div> 
-     <nav class="hero">
-      <div id="navbar" class="navbar">
+     <div class="hero">
+      <div id="navbar-" class="navbar-2">
       <div class="logo">
        <img src="img/discover Travel Logo 1.png" class="logo" alt="">
       </div>
@@ -167,9 +208,8 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </div>
 </div>
-      <br> <br>
       <div class="social">
         <div>
       <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
@@ -178,7 +218,7 @@
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, assumenda necessitatibus libero qu
         o neque quae blanditiis consectetur minus!</p>
-        <p>
+        <p id="Rights">
           2020 Discover Travel. All Rights Reserved
         </p>
       </div>
